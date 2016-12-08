@@ -5,7 +5,7 @@ import java.net.URI;
 
 public class Publisher {
     public static void main(String[] args) {
-        NodeMainExecutor nodeMainExecutor = DefaultNodeMainExecutor.newDefault();
+        	NodeMainExecutor nodeMainExecutor = DefaultNodeMainExecutor.newDefault();
 		Talker publisherNode = new Talker();
 		String host = "127.0.0.1";
 		URI masteruri = URI.create("http://"+host+":11311");
