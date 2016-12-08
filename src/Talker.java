@@ -15,10 +15,6 @@ public class Talker extends AbstractNodeMain {
 		final Publisher<std_msgs.String> publisher = connectedNode.newPublisher("testtopic", std_msgs.String._TYPE);
 		connectedNode.executeCancellableLoop(new CancellableLoop() {
 			@Override
-			protected void setup() {
-				//initialization
-			}
-			@Override
 			protected void loop() throws InterruptedException {
 				std_msgs.String str = publisher.newMessage();
 				str.setData("PubTest");
